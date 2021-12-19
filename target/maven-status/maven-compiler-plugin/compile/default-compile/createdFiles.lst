@@ -1,0 +1,7 @@
+com\zhang\springbootProxy\MyAdvice.class
+com\zhang\pojo\PositionBean.class
+com\zhang\springbootProxy\DaoProxy.class
+com\zhang\config\DefaultPageConfig.class
+com\zhang\AutoApplication.class
+com\zhang\springbootProxy\Dao.class
+com\zhang\controller\TestDemo.class
