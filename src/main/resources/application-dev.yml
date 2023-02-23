@@ -1,0 +1,28 @@
+server:
+  port: 8080
+#JDK5
+#spring:
+    #  datasource:
+    #    password:
+    #    username:
+    #    url: jdbc:mysql://localhost:3306/datebase?characterEncoding=utf-8
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#JDK8 版本向下兼容
+  #spring:
+    #  datasource:
+    #    password:
+    #    username:
+    #    url: jdbc:mysql://localhost:3306/datebase?characterEncoding=utf-8&serverTimezone=GMT%2B8
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+spring:
+  datasource:
+    password: 1234
+    username: root
+    url: jdbc:mysql://localhost:3306/auto_db?characterEncoding=utf-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#  MybatisPlus配置日志
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #默认的 控制台输出
