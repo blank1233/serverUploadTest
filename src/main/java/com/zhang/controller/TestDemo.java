@@ -1,7 +1,9 @@
 package com.zhang.controller;
 
+import com.zhang.config.AppConfig;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 import java.awt.*;
-import java.awt.event.InputEvent;
 import java.awt.image.BufferedImage;
 
 public class TestDemo {
@@ -36,14 +38,16 @@ public class TestDemo {
     }
 
     public static void main(String[] args) {
-        try {
+        /*try {
             Robot robot = new Robot();
             robot.mouseMove(776,262);
             robot.mousePress(InputEvent.BUTTON1_MASK);
             robot.mouseRelease(InputEvent.BUTTON1_MASK);
         } catch (AWTException e) {
             e.printStackTrace();
-        }
+        }*/
+        AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        System.out.println(annotationConfigApplicationContext.getBean("teacher"));
 
     }
 }

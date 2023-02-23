@@ -9,6 +9,9 @@ public class ProxyDemo {
         //JDK动态代理
         ZhangsanProxy zhangsanProxy = new ZhangsanProxy(new ZhangSan());
         Persion persion =(Persion) Proxy.newProxyInstance(ProxyDemo.class.getClassLoader(), new Class[]{Persion.class}, zhangsanProxy);
+        //persion是代理对象 zhangsanProxy可以理解为动作
+        System.out.println(persion.getClass());
+        System.out.println(zhangsanProxy.getClass());
         persion.makeCar();
     }
 
